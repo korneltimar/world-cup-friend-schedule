@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>World Cup Friend Schedule</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="intro">
+        <div class="pitch-markings" aria-hidden="true">
+          <span class="halfway-line"></span>
+          <span class="center-circle"></span>
+          <span class="center-spot"></span>
+          <span class="penalty-box penalty-box-left"></span>
+          <span class="penalty-box penalty-box-right"></span>
+          <span class="goal-box goal-box-left"></span>
+          <span class="goal-box goal-box-right"></span>
+          <span class="penalty-spot penalty-spot-left"></span>
+          <span class="penalty-spot penalty-spot-right"></span>
+        </div>
+        <div class="intro-mark" aria-hidden="true">
+          <span class="logo-year">2026</span>
+          <span class="logo-cup">World Cup</span>
+        </div>
+        <div class="intro-content">
+          <p class="eyebrow">FIFA World Cup 2026</p>
+          <h1>Friend Group Match Schedule</h1>
+          <p class="intro-copy">
+            Pick the countries your friends care about and see the relevant
+            games in one simple list.
+          </p>
+        </div>
+      </section>
+
+      <div class="planner-grid">
+        <div class="planner-list">
+          <section class="next-match-panel" aria-label="Next upcoming match">
+            <div class="next-match-content">
+              <p class="next-label">
+                <span id="liveIndicator" class="live-indicator" hidden></span>
+                <span id="nextMatchLabel">Next Match</span>
+              </p>
+              <h2 id="nextMatchTeams">Loading next match</h2>
+              <p id="nextMatchMeta"></p>
+            </div>
+            <button id="nextMatchButton" class="next-match-button" type="button">
+              Copy Reminder
+            </button>
+          </section>
+
+          <section class="controls" aria-label="Schedule filters">
+            <label class="field">
+              <span>Country</span>
+              <select id="countryFilter">
+                <option value="all">All friend countries</option>
+              </select>
+            </label>
+          </section>
+
+          <section class="friend-list" aria-label="Friend countries">
+            <h2>Friend Countries</h2>
+            <div id="countryButtons" class="country-buttons"></div>
+          </section>
+
+          <section class="schedule-section" aria-label="Matching fixtures">
+            <div class="section-heading">
+              <h2>Live & Upcoming Matches</h2>
+              <p id="matchCount">0 matches</p>
+            </div>
+            <div id="matchList" class="match-list"></div>
+          </section>
+        </div>
+
+        <aside class="calendar-panel" aria-label="June 2026 match calendar">
+          <div class="calendar-heading">
+            <div>
+              <p class="eyebrow">Calendar View</p>
+              <h2 id="calendarMonthLabel">June 2026</h2>
+            </div>
+            <p id="calendarSummary">0 match days</p>
+          </div>
+          <div id="calendarGrid" class="calendar-grid"></div>
+        </aside>
+      </div>
+    </main>
+
+    <template id="matchCardTemplate">
+      <article class="match-card">
+        <div class="date-block">
+          <span class="month"></span>
+          <span class="day"></span>
+        </div>
+        <div class="match-details">
+          <div class="teams"></div>
+          <div class="meta"></div>
+        </div>
+      </article>
+    </template>
+
+    <script src="app.js"></script>
+  </body>
+</html>
