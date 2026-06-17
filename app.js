@@ -5,7 +5,6 @@ const friendCountries = [
   "Portugal",
   "Mexico",
   "Netherlands",
-  "Colombia",
 ];
 
 const matches = [
@@ -64,15 +63,6 @@ const matches = [
     venue: "Houston Stadium",
   },
   {
-    date: "2026-06-17",
-    time: "8:00 PM local",
-    kickoff: "2026-06-17T20:00:00-06:00",
-    group: "Group K",
-    home: "Uzbekistan",
-    away: "Colombia",
-    venue: "Mexico City Stadium",
-  },
-  {
     date: "2026-06-18",
     time: "7:00 PM local",
     kickoff: "2026-06-18T19:00:00-06:00",
@@ -127,15 +117,6 @@ const matches = [
     venue: "Houston Stadium",
   },
   {
-    date: "2026-06-23",
-    time: "8:00 PM local",
-    kickoff: "2026-06-23T20:00:00-06:00",
-    group: "Group K",
-    home: "Colombia",
-    away: "Congo DR",
-    venue: "Estadio Guadalajara",
-  },
-  {
     date: "2026-06-24",
     time: "7:00 PM local",
     kickoff: "2026-06-24T19:00:00-06:00",
@@ -179,15 +160,6 @@ const matches = [
     home: "Panama",
     away: "England",
     venue: "New York New Jersey Stadium",
-  },
-  {
-    date: "2026-06-27",
-    time: "7:30 PM local",
-    kickoff: "2026-06-27T19:30:00-04:00",
-    group: "Group K",
-    home: "Colombia",
-    away: "Portugal",
-    venue: "Miami Stadium",
   },
 ];
 
